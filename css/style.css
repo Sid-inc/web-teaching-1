@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'cuprum';
+  src: url('fonts/cuprum.woff2') format('woff2'),
+       url('fonts/cuprum.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cuprumbold';
+  src: url('fonts/cuprumbold.woff2') format('woff2'),
+       url('fonts/cuprumbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cuprumbolditalic';
+  src: url('fonts/cuprumbolditalic.woff2') format('woff2'),
+       url('fonts/cuprumbolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'cuprumitalic';
+  src: url('fonts/cuprumitalic.woff2') format('woff2'),
+       url('fonts/cuprumitalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ptsans';
+  src: url('fonts/ptsans.woff2') format('woff2'),
+       url('fonts/ptsans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ptsansbold';
+  src: url('fonts/ptsansbold.woff2') format('woff2'),
+       url('fonts/ptsansbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: cuprum, arial, sans-serif;
+}
+
+.top-line {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.logo {
+  background-color: #ee3643;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 5px 0 #b52933;
+}
+
+.logo-text {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.search-field {
+  color: inherit;
+}
+
+.bookmarks {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cart {
+  color: inherit;
+  text-decoration: none;
+}
+
+.order {
+  background-color: #63a63e;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.second-line {
+  background-color: #f4f7f9;
+}
+
+.store-text {
+  color: #ee3643;
+}
+
+.phone-button {}
+
+.phone-number {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.address {
+  color: #32425c
+}
+
+.enter-registration {
+  list-style-type: none;
+  color: #000000;
+}
+
+.enter-button {
+  background-color: #ffffff;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.registration-button {
+  background-color: #ffffff;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.nav {
+  background-color: #32425c;
+  color: #ffffff;
+  box-shadow: 0 5px 0 #293449;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.main-main {
+  background-color: #ffffff;
+}
+
+.product-list {
+  list-style-type: none;
+  color: #ffffff;
+}
+
+.block-materials {
+  background-color: #ffbf47;
+}
+
+.materials-text {
+  background-color: #e5ac40;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.block-tools {
+  background-color: #3bbce3;
+}
+
+.tools-text {
+  background-color: #35a9cc;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.block-technics {
+  background-color: #dc91d8;
+}
+
+.technics-text {
+  background-color: #c682c2;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.block-discounts {
+  background-color: #8ed78f;
+}
+
+.discounts-text {
+  background-color: #80c180;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.block-delivery {
+  background-color: #ffc047;
+}
+
+.delivery-text {
+  background-color: #e5ac40;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.popular-block {
+  background-color: #f9f5f0;
+  text-transform: uppercase;
+}
+
+.popular-text {
+  color: #32425c;
+}
+
+.popular-link {
+  background-color: #ee3643;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.brand-block {
+  background-color: #f9f5f0;
+  text-transform: uppercase;
+}
+
+.brand-text {
+  color: #32425c;
+}
+
+.brand-link {
+  background-color: #ee3643;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.brands-list {
+  list-style-type: none;
+}
+
+.services-delivery {
+  background-color: #f4f8fa;
+}
+
+.services {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-text {
+  font-family: ptsans, arial, sans-serif;
+  color: inherit;
+}
+
+.delivery-credit {
+  list-style-type: none;
+}
+
+.warranty {
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.warranty-text {
+  font-family: ptsans, arial, sans-serif;
+  color: #000000;
+}
+
+.credit {
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.credit-text {
+  font-family: ptsans, arial, sans-serif;
+  color: #000000;
+}
+
+.ticket-button {
+  background-color: #ff5357;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.about-us {
+  color: #000000;
+}
+
+.about-company {
+  color:inherit;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-family: ptsans, arial, sans-serif;
+  color:inherit;
+}
+
+.second-tagline {
+  font-family: ptsans, arial, sans-serif;
+  color:inherit;
+}
+
+.transport-company {
+  list-style-type: none
+}
+
+.about-link {
+  background-color: #ee3643;
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contacts-map {
+  color: #000000;
+}
+
+.contacts-text {
+  color:inherit;
+  text-transform: uppercase
+}
+
+.selfpull-text {
+  font-family: ptsans, arial, sans-serif;
+  color:inherit;
+}
+
+.feedback-form {
+  background-color: #ee3643;
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.footer-logo {
+  background-color: #ee3643;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 5px 0 #b52933;
+}
+
+.second-logo {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  list-style-type: none
+}
+
+.footer-address {}
+
+.bottom-line {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.copyring {}
+
+.social-link {
+  list-style-type: none
+}
+
+.vk-link {}
+
+.facebook-link {}
+
+.instagram-link {
+  background-image: url();
+}
+
+.feedback-text {}
+
+.feedback-link {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.developed-text {}
+
+.developed-link {
+  color: #ffd180;
+  text-decoration: none;
+}
