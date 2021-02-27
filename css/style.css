@@ -63,14 +63,24 @@ body {
   box-shadow: 0 5px 0 #b52933;
 }
 
+.logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 #9a212a;
+}
+
+.logo:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 #8e1e26;
+}
+
 .logo-text {
+  font-size: 24px;
+  font-weight: normal;
   color: inherit;
   text-transform: uppercase;
 }
 
-.search-field {
-  color: inherit;
-}
+.search-field {}
 
 .bookmarks {
   color: inherit;
@@ -97,12 +107,12 @@ body {
   color: #ee3643;
 }
 
-.phone-button {}
-
 .phone-number {
   color: #ee3643;
   text-decoration: none;
 }
+
+.phone-text {}
 
 .address {
   color: #32425c
@@ -119,6 +129,8 @@ body {
   text-decoration: none;
   display: block;
 }
+
+.header-button {}
 
 .registration-button {
   background-color: #ffffff;
@@ -137,7 +149,7 @@ body {
   list-style: none;
 }
 
-.main-main {
+.main-content {
   background-color: #ffffff;
 }
 
@@ -146,8 +158,24 @@ body {
   color: #ffffff;
 }
 
-.block-materials {
+.product {
   background-color: #ffbf47;
+}
+
+.product:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.product:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.product:nth-child(4) {
+  background-color: #8ed78f;
+}
+
+.product:nth-child(5) {
+  background-color: #ffc047;
 }
 
 .materials-text {
@@ -156,22 +184,6 @@ body {
   text-decoration: none;
   color: inherit;
   display: block;
-}
-
-.block-tools {
-  background-color: #3bbce3;
-}
-
-.block-technics {
-  background-color: #dc91d8;
-}
-
-.block-discounts {
-  background-color: #8ed78f;
-}
-
-.block-delivery {
-  background-color: #ffc047;
 }
 
 .popular-block {
