@@ -109,7 +109,7 @@ body {
 }
 
 .enter-registration {
-  list-style-type: none;
+  list-style: none;
   color: #000000;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 .nav-links {
-  list-style-type: none;
+  list-style: none;
 }
 
 .main-main {
@@ -142,7 +142,7 @@ body {
 }
 
 .product-list {
-  list-style-type: none;
+  list-style: none;
   color: #ffffff;
 }
 
@@ -151,7 +151,7 @@ body {
 }
 
 .materials-text {
-  background-color: #e5ac40;
+  background-color: rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
@@ -162,48 +162,16 @@ body {
   background-color: #3bbce3;
 }
 
-.tools-text {
-  background-color: #35a9cc;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
 .block-technics {
   background-color: #dc91d8;
-}
-
-.technics-text {
-  background-color: #c682c2;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: inherit;
-  display: block;
 }
 
 .block-discounts {
   background-color: #8ed78f;
 }
 
-.discounts-text {
-  background-color: #80c180;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
 .block-delivery {
   background-color: #ffc047;
-}
-
-.delivery-text {
-  background-color: #e5ac40;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: inherit;
-  display: block;
 }
 
 .popular-block {
@@ -239,7 +207,7 @@ body {
 }
 
 .brands-list {
-  list-style-type: none;
+  list-style: none;
 }
 
 .services-delivery {
@@ -257,7 +225,7 @@ body {
 }
 
 .delivery-credit {
-  list-style-type: none;
+  list-style: none;
 }
 
 .warranty {
@@ -307,7 +275,7 @@ body {
 }
 
 .transport-company {
-  list-style-type: none
+  list-style: none
 }
 
 .about-link {
@@ -359,7 +327,7 @@ body {
 }
 
 .footer-nav {
-  list-style-type: none
+  list-style: none
 }
 
 .footer-address {}
@@ -372,7 +340,7 @@ body {
 .copyring {}
 
 .social-link {
-  list-style-type: none
+  list-style: none
 }
 
 .vk-link {}
