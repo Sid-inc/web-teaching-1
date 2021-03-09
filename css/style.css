@@ -104,6 +104,10 @@ body {
   background-color: #293449;
 }
 
+input[type="search"]:hover {
+  background-color: #212a3a;
+}
+
 .search-field::placeholder {
   color: #ffffff;
 }
@@ -113,6 +117,7 @@ body {
 }
 
 .search-field:hover {
+  background-color: #212a3a;
   background: url("../img/icon-search-hover.png") no-repeat left 16px center;
 }
 
@@ -147,13 +152,19 @@ body {
   opacity: 0.3;
 }
 
-.bookmarks:hover::before, .cart:hover::before {
+.bookmarks:hover, .cart:hover {
   background-color: #212a3a;
+}
+
+.bookmarks:hover::before, .cart:hover::before {
   opacity: 1;
 }
 
-.bookmarks:active::before, .cart:active::before {
+.bookmarks:active, .cart:active {
   background-color: #161d29;
+}
+
+.bookmarks:active::before, .cart:active::before {
   opacity: 0.5;
 }
 
@@ -350,10 +361,18 @@ body {
   color: #a8abaf;
 }
 
+.nav li:first-child a {
+  padding-left: 57px;
+}
+
+.nav li:last-child a {
+  padding-right: 56px;
+}
+
 .main-content {
   /*тест разрыва старницы*/
-  /*background-color: #22b7c2;*/
-  background-color: #ffffff;
+  background-color: #22b7c2;
+  /*background-color: #ffffff;*/
 }
 
 .product-inner {
@@ -624,7 +643,7 @@ body {
 .new-perforator::before {
   content: "";
   position: absolute;
-  left: 161px;
+  left: 160px;
   width: 60px;
   height: 60px;
   background: url("../img/new-flag.png") no-repeat;
