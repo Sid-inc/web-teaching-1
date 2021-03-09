@@ -37,7 +37,7 @@
               <button class="enter-button" type="button">Войти</button>
             </li>
             <li class="button">
-              <button class="registration-button button" type="button">Регистарция</button>
+              <button class="registration-button" type="button">Регистарция</button>
             </li>
           </ul>
         </div>
@@ -236,15 +236,15 @@
               </p>
             </div>
             <ul class="footer-nav">
-              <li class="footer-navigation"><a class="footer-navigation" href="#">Компания</a></li>
-              <li class="footer-navigation"><a class="footer-navigation" href="#">Новости</a></li>
-              <li class="footer-navigation"><a class="footer-navigation" href="#">Каталог</a></li>
-              <li class="footer-navigation"><a class="footer-navigation" href="#">Доставка</a></li>
-              <li class="footer-navigation"><a class="footer-navigation" href="#">Контакты</a></li>
-              <li class="materials-offers"><a class="materials-offers" href="#">Материалы</a></li>
-              <li class="materials-offers"><a class="materials-offers" href="#">Техника</a></li>
-              <li class="materials-offers"><a class="materials-offers" href="#">Инструменты</a></li>
-              <li class="materials-offers"><a class="materials-offers" href="#">Спецпредложения</a></li>
+              <li><a class="footer-navigation" href="#">Компания</a></li>
+              <li><a class="footer-navigation" href="#">Новости</a></li>
+              <li><a class="footer-navigation" href="#">Каталог</a></li>
+              <li><a class="footer-navigation" href="#">Доставка</a></li>
+              <li><a class="footer-navigation" href="#">Контакты</a></li>
+              <li><a class="materials-offers" href="#">Материалы</a></li>
+              <li><a class="materials-offers" href="#">Техника</a></li>
+              <li><a class="materials-offers" href="#">Инструменты</a></li>
+              <li><a class="materials-offers" href="#">Спецпредложения</a></li>
             </ul>
           </div>
         </section>
@@ -269,27 +269,34 @@
           </div>
         </section>
       </footer>
-  <!--section class="feedback-form">
-    <h2>Форма обратной связи</h2>
-    заголовок скрыть, добавить доступность и text area
+  <section class="feedback-form">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="user" method="post" action="https://echo.htmlacademy.ru">
-      <p>
-        Ваше имя:
-        <input class="input-windows" type="text" name="name" value="" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        Ваш e-mail:
-        <input class="input-windows" type="email" name="name" value="" placeholder="email@example.com">
-      </p>
-      <p>
-        Текст письма:
-        <input class="input-windows" type="text" name="name" value="" placeholder="В свободной форме">
-      </p>
+      <div class="form-inner">
+        <div class="name">
+          <p>
+            Ваше имя:
+          </p>
+          <input class="input-windows" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </div>
+        <div class="name">
+          <p>
+            Ваш e-mail:
+          </p>
+          <input class="input-windows" type="email" name="name" value="" placeholder="email@example.com">
+        </div>
+        <div class="letter-text">
+          <p>
+            Текст письма:
+          </p>
+          <textarea class="input-windows" name="text">В свободной форме</textarea>
+        </div>
+      </div>
       <div class="send-field">
         <button class="about-feedback" type="submit">Отправить</button>
       </div>
-      <button class="close-button" type="button">закрыть</button>красный крестик закрыть окно
+      <button class="close-button" type="button"></button>
     </form>
-  </section>-->
+  </section>
   </body>
 </html>
