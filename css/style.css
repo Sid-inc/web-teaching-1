@@ -588,7 +588,8 @@ input[type="search"]:hover {
 .about-button:hover,
 .feedback-button:hover,
 .about-feedback:hover,
-.open-catalog:hover {
+.open-catalog:hover,
+.ticket-button:hover {
   background-color: #ca2c37;
 }
 
@@ -596,7 +597,8 @@ input[type="search"]:hover {
 .about-button:active,
 .feedback-button:active,
 .about-feedback:active,
-.open-catalog:active {
+.open-catalog:active,
+.ticket-button:active {
   background-color: #ba2732;
 }
 
@@ -886,7 +888,7 @@ input[type="search"]:hover {
   margin-top: 24px;
   margin-bottom: 0px;
   padding: 0px;
-  padding-right: 330px;
+  padding-right: 230px;
   font-family: ptsans, arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -919,9 +921,43 @@ input[type="search"]:hover {
   margin-bottom: 98px;
 }
 
+/*.delivery-credit::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 272px;
+  top: 10px;
+  left: 10px;
+  background: url("../img/warranty-img.png") no-repeat;
+}*/ /*не работает*/
+
 .advantages-list {
-  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 240px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.advantages-list input[type=radio] { /*убирает значок радиокнопки*/
+  display: none;
+}
+
+.advantages-list label {
+  display: block;
+	cursor: pointer;
+	padding: 20px;
+  padding-right: 60px;
+	user-select: none;
   background-color: #32425c;
+  box-shadow: 0px -1px 0px 0px rgba(41, 52, 73, 1) inset, 0px 1px 0px 0px rgba(64, 80, 105, 1) inset;
+}
+
+.advantages-list input[type=radio]:checked + label {
+  background-color: #ffffff;
+  color: #32425c;
+  box-shadow: none;
 }
 
 .advantages-inner {
@@ -929,13 +965,40 @@ input[type="search"]:hover {
 }
 
 .delivery-block {
+  display: none; /*тест JS*/
   min-height: 278px;
   background: url("../img/delivery-img.png") no-repeat right top 30px;
+}
+
+.delivery-block-show {
+  display: block;
+}
+
+.warranty-block {
+  display: none; /*тест JS*/
+  min-height: 278px;
+  background: url("../img/warranty-img.png") no-repeat right top 30px;
+}
+
+.warranty-block-show {
+  display: block;
+}
+
+.credit-block {
+  display: none; /*тест JS*/
+  min-height: 278px;
+  background: url("../img/credit-img.png") no-repeat right top 30px;
+}
+
+.credit-block-show {
+  display: block;
 }
 
 .ticket-button {
   width: 196px;
   height: 40px;
+  margin-top: 27px;
+  margin-left: 80px;
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;

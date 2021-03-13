@@ -173,31 +173,44 @@
           <div class="advantages-container">
             <div class="advantages">
               <ul class="delivery-credit">
-                <li class="advantages-list">Доставка</li>
-                <li class="advantages-list">Гарантия</li>
-                <li class="advantages-list">Кредит</li>
+                <li class="advantages-list">
+                  <input class="delivery-button" id="radio-1" type="radio" name="radio" value="1" checked>
+                  <label for="radio-1">Доставка</label>
+                </li>
+                <li class="advantages-list">
+                  <input class="warranty-button" id="radio-2" type="radio" name="radio" value="2">
+                  <label for="radio-2">Гарантия</label>
+                </li>
+                <li class="advantages-list">
+                  <input class="credit-button" id="radio-3" type="radio" name="radio" value="3">
+                  <label for="radio-3">Кредит</label>
+                </li>
               </ul>
             </div>
             <div class="advantages-inner">
-              <div class="delivery-block">
+              <div class="delivery-block delivery-block-show">
                 <h2 class="warranty-credit">Доставка</h2>
                 <p class="services-text waranty-text">
                   Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>
                   Ведь мы неплохо заработааем,<br>поднимая его на ваш этаж!
                 </p>
               </div>
-              <!--h2 class="warranty-credit">Гарантия</h2>
+              <div class="warranty-block">
+              <h2 class="warranty-credit">Гарантия</h2>
               <p class="services-text waranty-text">
                 Если купленный у нас товар поломается или заикрит,<br>
                 а также в случае пожара, спровоцированного его возгорание,<br>
                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
                 сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.
               </p>
-              <h2 class="warranty-credit">Кредит</h2>
-              <p class="services-text waranty-text">
-                Залезть в долговвую яму стало проще!<br>Кредитные консультанты придут вам на помощь.
-              </p>
-              <a class="ticket-button" href="#">Отправить заявку</a-->
+              </div>
+              <div class="credit-block">
+                <h2 class="warranty-credit">Кредит</h2>
+                <p class="services-text waranty-text">
+                  Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="ticket-button" href="#">Отправить заявку</a>
+              </div>
             </div>
           </div>
         </section>
@@ -224,8 +237,12 @@
                 Вы можете забрать товар сами,<br>заехав в наш офис:
               </p>
               <a class="mini-map"></a>
-                <!--img class="mini-map" src="img/Map_300x158.png" width="300" height="158" alt="Большая Конюшенная 19/8 малая картинка"-->
               <button class="feedback-button" type="button">Заблудились? Напишите нам!</button>
+              <section class="big-map-form">
+                <h2 class="visually-hidden"><Большая карта</h2>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615553014841!5m2!1sru!2sru" width="940" height="446" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <button class="close-map-button" type="button"></button>
+              </section>
             </section>
           </div>
       </main>
@@ -303,12 +320,10 @@
           <button class="close-button" type="button"></button>
         </form>
       </section>
-      <section class="big-map-form">
-        <h2 class="visually-hidden"><Большая карта</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615553014841!5m2!1sru!2sru" width="940" height="446" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          <button class="close-map-button" type="button"></button>
-      </section>
       <script src="js/feedback-form.js"></script>
       <script src="js/map.js"></script>
+      <!--script src="js/delivery.js"></script>
+      <script src="js/warranty.js"></script>
+      <script src="js/credit.js"></script-->
       </body>
     </html>
