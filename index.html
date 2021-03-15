@@ -73,16 +73,20 @@
       </section>
         <div class="slider-block">
           <div class="slider">
-            <ul>
+            <ul class="slider-inner">
               <li>
-                <h3>Перфораторы<h3>
-                <p>Настоящие мужские игрушки</p>
+                <div class="image-text">
+                  <img src="img/slider-perforators.jpg" width="620px" height="266px" alt="slider-perforators-man">
+                  <h3 class="slider-heading">Перфораторы</h3>
+                  <p class="slider-text">Настоящие мужские игрушки</p>
+                  <a class="open-catalog" href="#">Открыть каталог</a>
+                </div>
               </li>
-              <li>
-                <h3>Дрели<h3>
-                <p>Соседям на радость</p>
-              </li>
-            </ul>
+              <!--li>
+              <h3 class="slider-heading">Дрели</h3>
+              <p>Соседям на радость</p>
+              </li-->
+              </ul>
           </div>
           <ul class="discount-list">
             <li class="discount discounts-icon">
@@ -95,14 +99,14 @@
             </li>
           </ul>
         </div>
-        <section>
+        <article>
           <div class="product-brands">
             <h2>Популярные товары:</h2>
               <a class="popular-link" href="#">Все популярные товары</a>
           </div>
           <ul class="perforator-list">
             <li class="perforator">
-              <img class="perforator-img" src="img/Perforator-BFG-9000.jpg" alt="BFG-9000">
+              <img class="perforator-img" src="img/Perforator-BFG-9000.jpg" width="220px" height="170px" alt="BFG-9000">
               <div class="buttons">
                 <button class="buy" type="button">купить</button>
                 <button class="in-bookmarks" type="button">в закладки</button>
@@ -112,7 +116,7 @@
               <p class="price">25500 Р.</p>
             </li>
             <li class="perforator">
-              <img class="perforator-img" src="img/Perforator-BFG-3000.jpg" alt="BFG-3000">
+              <img class="perforator-img" src="img/Perforator-BFG-3000.jpg" width="220px" height="170px" alt="BFG-3000">
               <div class="buttons">
                 <button class="buy" type="button">купить</button>
                 <button class="in-bookmarks" type="button">в закладки</button>
@@ -122,7 +126,7 @@
               <p class="price">15500 Р.</p>
             </li>
             <li class="perforator">
-              <img class="perforator-img" src="img/Perforator-BFG-6000.jpg" alt="BFG-6000">
+              <img class="perforator-img" src="img/Perforator-BFG-6000.jpg" width="220px" height="170px" alt="BFG-6000">
               <div class="buttons">
                 <button class="buy" type="button">купить</button>
                 <button class="in-bookmarks" type="button">в закладки</button>
@@ -132,7 +136,7 @@
               <p class="price">25500 Р.</p>
             </li>
             <li class="perforator new-perforator">
-              <img class="perforator-img" src="img/Perforator-BFG-2000.jpg" alt="BFG-2000">
+              <img class="perforator-img" src="img/Perforator-BFG-2000.jpg" width="220px" height="170px" alt="BFG-2000">
               <div class="buttons">
                 <button class="buy" type="button">купить</button>
                 <button class="in-bookmarks" type="button">в закладки</button>
@@ -141,7 +145,7 @@
               <p class="price">12500 Р.</p>
             </li>
           </ul>
-        </section>
+        </article>
         <section>
           <div class="product-brands">
             <h2>Популярные производители:</h2>
@@ -166,63 +170,81 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
           </div>
-          <!--<ul class="delivery-credit">
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
-          </ul>--><!--JS-->
-          <!--<h2 class="warranty-credit">Доставка</h2>
-          <p class="services-text">
-            Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо зарабатываем,<br>поднимая его на ваш этаж!
-          </p>
-          <h2 class="warranty-credit">Гарантия</h2>
-          <p class="services-text">
-            Если купленный у нас товар поломается или заикрит,<br>
-            а также в случае пожара, спровоцированного его возгорание,<br>
-            вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-            сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.
-          </p>
-          <h2 class="warranty-credit">Кредит</h2>
-          <p class="services-text">
-            Залезть в долговвую яму стало проще!<br>Кредитные консультанты придут вам на помощь.
-          </p>
-          <a class="ticket-button" href="#">Отправить заявку</a>-->
+          <div class="advantages-container">
+            <div class="advantages">
+              <ul class="delivery-credit">
+                <li class="advantages-list">
+                  <input class="delivery-button" id="radio-1" type="radio" name="radio" value="1" checked>
+                  <label for="radio-1">Доставка</label>
+                </li>
+                <li class="advantages-list">
+                  <input class="warranty-button" id="radio-2" type="radio" name="radio" value="2">
+                  <label for="radio-2">Гарантия</label>
+                </li>
+                <li class="advantages-list">
+                  <input class="credit-button" id="radio-3" type="radio" name="radio" value="3">
+                  <label for="radio-3">Кредит</label>
+                </li>
+              </ul>
+            </div>
+            <div class="advantages-inner">
+              <div class="delivery-block delivery-block-show">
+                <h2 class="warranty-credit">Доставка</h2>
+                <p class="services-text waranty-text">
+                  Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработааем,<br>поднимая его на ваш этаж!
+                </p>
+              </div>
+              <div class="warranty-block">
+              <h2 class="warranty-credit">Гарантия</h2>
+              <p class="services-text waranty-text">
+                Если купленный у нас товар поломается или заикрит,<br>
+                а также в случае пожара, спровоцированного его возгорание,<br>
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.
+              </p>
+              </div>
+              <div class="credit-block">
+                <h2 class="warranty-credit">Кредит</h2>
+                <p class="services-text waranty-text">
+                  Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="ticket-button" href="#">Отправить заявку</a>
+              </div>
+            </div>
+          </div>
         </section>
         <div class="container-company-map">
           <section class="about-us">
-            <div class="about-us-inner">
-              <h2 class="company-contacts">Компания "Техномарт"</h2>
-              <p class="services-text">
-                Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-                строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-              </p>
-              <p class="services-text paragraph-two">
-                Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-                Техномарт работает со многими транспортными компаниями:</p>
+            <h2 class="company-contacts">Компания «Техномарт»</h2>
+            <p class="true-man-text">
+              Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+              строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+            </p>
+            <p class="paragraph-two">
+              Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+              Техномарт работает со многими транспортными компаниями:</p>
               <ul class="transport-company">
                 <li class="transport-list">Деловые линии</li>
                 <li class="transport-list">Автотрейдинг</li>
                 <li class="transport-list">ЖелДорЭкспедиция</li>
               </ul>
               <a class="about-button" href="#">Подробнее о компании</a>
-            </div>
-          </section>
-          <section class="contacts-map">
-            <div>
+            </section>
+            <section class="contacts-map">
               <h2 class="company-contacts">Контакты</h2>
-              <p class="services-text">
+              <p class="true-man-text">
                 Вы можете забрать товар сами,<br>заехав в наш офис:
               </p>
-                <img src="img/Map_300x158.png" width="300" height="158" alt="Большая Конюшенная 19/8 малая картинка">
-              <!--<p>
-                <img src="img/map_big.jpg" width="940" height="446" alt="Офис компании ул. Б. Конюшенная, д.19/8">
-              </p>
-              <button class="close-button" type="button">Закрыть</button>-->
-              <button class="feedback-button" type="button">Заблудились? Напишите нам!</button><!--кнопка заблудились, должна открывать форму-->
-            </div>
-          </section>
-        </div>
+              <a class="mini-map"></a>
+              <button class="feedback-button" type="button">Заблудились? Напишите нам!</button>
+              <section class="big-map-form">
+                <h2 class="visually-hidden"><Большая карта</h2>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615553014841!5m2!1sru!2sru" width="940" height="446" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <button class="close-map-button" type="button"></button>
+              </section>
+            </section>
+          </div>
       </main>
       <footer>
         <section class="footer">
@@ -251,7 +273,7 @@
         <section class="bottom-line-background">
           <div class="bottom-line">
             <p class="copyring-text">
-              &copy; 2010-2019 Компания "Техномарт"<br>Все права защищены
+              &copy; 2010-2019 Компания «Техномарт»<br>Все права защищены
             </p>
             <ul class="social-inner">
               <li><a class="social-link vk-link" href="#" aria-label="Вконтакте"></a></li>
@@ -269,34 +291,39 @@
           </div>
         </section>
       </footer>
-  <section class="feedback-form">
-    <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form class="user" method="post" action="https://echo.htmlacademy.ru">
-      <div class="form-inner">
-        <div class="name">
-          <p>
-            Ваше имя:
-          </p>
-          <input class="input-windows" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </div>
-        <div class="name">
-          <p>
-            Ваш e-mail:
-          </p>
-          <input class="input-windows" type="email" name="name" value="" placeholder="email@example.com">
-        </div>
-        <div class="letter-text">
-          <p>
-            Текст письма:
-          </p>
-          <textarea class="input-windows" name="text">В свободной форме</textarea>
-        </div>
-      </div>
-      <div class="send-field">
-        <button class="about-feedback" type="submit">Отправить</button>
-      </div>
-      <button class="close-button" type="button"></button>
-    </form>
-  </section>
-  </body>
-</html>
+      <section class="feedback-form">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="user" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form-inner">
+            <div class="name">
+              <p>
+                Ваше имя:
+              </p>
+              <input class="input-windows" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </div>
+            <div class="name">
+              <p>
+                Ваш e-mail:
+              </p>
+              <input class="input-windows" type="email" name="name" value="" placeholder="email@example.com">
+            </div>
+            <div class="letter-text">
+              <p>
+                Текст письма:
+              </p>
+              <textarea class="input-windows" name="text">В свободной форме</textarea>
+            </div>
+          </div>
+          <div class="send-field">
+            <button class="about-feedback" type="submit">Отправить</button>
+          </div>
+          <button class="close-button" type="button"></button>
+        </form>
+      </section>
+      <script src="js/feedback-form.js"></script>
+      <script src="js/map.js"></script>
+      <!--script src="js/delivery.js"></script>
+      <script src="js/warranty.js"></script>
+      <script src="js/credit.js"></script-->
+      </body>
+    </html>
