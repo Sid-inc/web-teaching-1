@@ -375,8 +375,6 @@ input[type="search"]:hover {
 }
 
 .main-content {
-  /*тест разрыва старницы*/
-  /*background-color: #22b7c2;*/
   background-color: #ffffff;
 }
 
@@ -549,20 +547,6 @@ input[type="search"]:hover {
   z-index: 2;
 }
 
-/*.wrapper label::before {
-  content: "";
-  position: absolute;
-  right: -2px;
-
-  width: 10px;
-  height: 10px;
-  margin-left: 295px;
-  background: #ffffff;
-	border-radius: 50%;
-  cursor: pointer;
-  z-index: 1;
-}*/
-
 .wrapper label:last-child {
   margin-left: 315px;
 }
@@ -677,7 +661,7 @@ input[type="search"]:hover {
 .popular-link:hover,
 .about-button:hover, .about-button:focus,
 .feedback-button:hover, .feedback-button:focus,
-.about-feedback:hover,
+.about-feedback:hover, .about-feedback:focus,
 .open-catalog:hover,
 .ticket-button:hover {
   background-color: #ca2c37;
@@ -1064,7 +1048,7 @@ input[type="search"]:hover {
 }
 
 .delivery-block {
-  display: none; /*тест JS*/
+  display: none;
   min-height: 278px;
   background: url("../img/delivery-img.png") no-repeat right top 28px;
 }
@@ -1074,7 +1058,7 @@ input[type="search"]:hover {
 }
 
 .warranty-block {
-  display: none; /*тест JS*/
+  display: none;
   min-height: 278px;
   background: url("../img/warranty-img.png") no-repeat right;
 }
@@ -1084,7 +1068,7 @@ input[type="search"]:hover {
 }
 
 .credit-block {
-  display: none; /*тест JS*/
+  display: none;
   min-height: 278px;
   background: url("../img/credit-img.png") no-repeat right;
 }
