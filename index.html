@@ -71,34 +71,39 @@
           </li>
         </ul>
       </section>
-        <div class="slider-block">
+      <section class="slider-block">
+        <div class="wrapper">
+          <input type="radio" name="point" id="slide1" checked>
+          <input type="radio" name="point" id="slide2">
           <div class="slider">
-            <ul class="slider-inner">
-              <li>
-                <div class="image-text">
-                  <img src="img/slider-perforators.jpg" width="620px" height="266px" alt="slider-perforators-man">
-                  <h3 class="slider-heading">Перфораторы</h3>
-                  <p class="slider-text">Настоящие мужские игрушки</p>
-                  <a class="open-catalog" href="#">Открыть каталог</a>
-                </div>
-              </li>
-              <!--li>
+            <div class="slides slide1">
+              <h3 class="slider-heading">Перфораторы</h3>
+              <p class="slider-text">Настоящие мужские игрушки</p>
+              <img src="img/slider-perforators.jpg" width="620px" height="266px" alt="slider-perforators-man">
+            </div>
+            <div class="slides slide2">
               <h3 class="slider-heading">Дрели</h3>
-              <p>Соседям на радость</p>
-              </li-->
-              </ul>
+              <p class="slider-text">Соседям на радость</p>
+              <img src="img/slider-drills.jpg" width="620px" height="266px" alt="slider-drill-man">
+            </div>
           </div>
-          <ul class="discount-list">
-            <li class="discount discounts-icon">
-              <h2>Скидки 50%</h2>
-              <a class="materials-text" href="#">На 350 товаров</a>
-            </li>
-            <li class="discount delivery-icon">
-              <h2>Доставка</h2>
-              <a class="materials-text" href="#">Бесплатно</a>
-            </li>
-          </ul>
+          <div class="controls">
+            <label class="bottom-left"  for="slide1"></label>
+            <label class="bottom-right" for="slide2"></label>
+          </div>
+          <a class="open-catalog" href="#">Открыть каталог</a>
         </div>
+        <ul class="discount-list">
+          <li class="discount discounts-icon">
+            <h2>Скидки 50%</h2>
+            <a class="materials-text" href="#">На 350 товаров</a>
+          </li>
+          <li class="discount delivery-icon">
+            <h2>Доставка</h2>
+            <a class="materials-text" href="#">Бесплатно</a>
+          </li>
+        </ul>
+        </section>
         <article>
           <div class="product-brands">
             <h2>Популярные товары:</h2>
@@ -152,14 +157,14 @@
               <a class="popular-link" href="#">Все производители</a>
           </div>
           <ul class="brands-list">
-            <li class="brand logo-bosch"><a href="#"></a></li>
-            <li class="brand logo-makita"><a href="#"></a></li>
-            <li class="brand logo-dewalt"><a href="#"></a></li>
-            <li class="brand logo-interscol"><a href="#"></a></li>
-            <li class="brand logo-hitachi"><a href="#"></a></li>
-            <li class="brand logo-lg"><a href="#"></a></li>
-            <li class="brand logo-aeg"><a href="#"></a></li>
-            <li class="brand logo-metabo"><a href="#"></a></li>
+            <li class="brand logo-bosch"><a class="brands-focus" href="#"></a></li>
+            <li class="brand logo-makita"><a class="brands-focus" href="#"></a></li>
+            <li class="brand logo-dewalt"><a class="brands-focus" href="#"></a></li>
+            <li class="brand logo-interscol"><a class="brands-focus" href="#"></a></li>
+            <li class="brand logo-hitachi"><a class="brands-focus" href="#"></a></li>
+            <li class="brand logo-lg"><a class="brands-focus" href="#"></a></li>
+            <li class="brand logo-aeg"><a class="brands-focus" href="#"></a></li>
+            <li class="brand logo-metabo"><a class="brands-focus" href="#"></a></li>
           </ul>
         </section>
         <section class="services-delivery">
@@ -174,16 +179,16 @@
             <div class="advantages">
               <ul class="delivery-credit">
                 <li class="advantages-list">
-                  <input class="delivery-button" id="radio-1" type="radio" name="radio" value="1" checked>
-                  <label for="radio-1">Доставка</label>
+                  <input class="delivery-button" id="radio-1" type="radio" name="radio" value="1" checked tabindex="1">
+                  <label for="radio-1" tabindex="1">Доставка</label>
                 </li>
                 <li class="advantages-list">
                   <input class="warranty-button" id="radio-2" type="radio" name="radio" value="2">
-                  <label for="radio-2">Гарантия</label>
+                  <label for="radio-2" tabindex="1">Гарантия</label>
                 </li>
                 <li class="advantages-list">
                   <input class="credit-button" id="radio-3" type="radio" name="radio" value="3">
-                  <label for="radio-3">Кредит</label>
+                  <label for="radio-3" tabindex="1">Кредит</label>
                 </li>
               </ul>
             </div>
@@ -236,7 +241,7 @@
               <p class="true-man-text">
                 Вы можете забрать товар сами,<br>заехав в наш офис:
               </p>
-              <a class="mini-map"></a>
+              <a class="mini-map" href="#"></a>
               <button class="feedback-button" type="button">Заблудились? Напишите нам!</button>
               <section class="big-map-form">
                 <h2 class="visually-hidden"><Большая карта</h2>
@@ -322,8 +327,8 @@
       </section>
       <script src="js/feedback-form.js"></script>
       <script src="js/map.js"></script>
-      <!--script src="js/delivery.js"></script>
+      <script src="js/delivery.js"></script>
       <script src="js/warranty.js"></script>
-      <script src="js/credit.js"></script-->
+      <script src="js/credit.js"></script>
       </body>
     </html>
