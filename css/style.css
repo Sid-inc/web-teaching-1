@@ -93,10 +93,9 @@ body {
   text-transform: uppercase;
 }
 
-/*.search-field::-webkit-search-cancel-button {
+.search-field::-webkit-search-cancel-button {
   display: none;
- }*/
-
+ }
 
 .search-field {
   padding-top: 12px;
@@ -707,18 +706,13 @@ input[type="search"]:hover {
 }
 
 .perforator {
-  margin-top: 20px;
-  box-shadow: inset 0px 0px 0px 1px rgba(234,234,234,1);
-}
-
-.product-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 220px;
   min-height: 316px;
-  text-decoration: none;
-  color: #000000;
+  margin-top: 20px;
+  box-shadow: inset 0px 0px 0px 1px rgba(234,234,234,1);
 }
 
 .perforator-img {
@@ -1028,16 +1022,16 @@ input[type="search"]:hover {
 
 .advantages-list label:hover,
 .advantages-list label:focus,
-.advantages-list input[type=radio]:checked + label:hover {
+.advantages-list input[type=radio]:checked {
   color: inherit;
   background-color: #293449;
 }
 
 /*убирает значок радиокнопки*/
 .advantages-list input[type=radio] {
-  visibility: hidden;
+  /*visibility: hidden;
   width: 0px;
-  height: 0px;
+  height: 0px;*/
 }
 
 .advantages-list label {
@@ -1454,10 +1448,6 @@ input[type="search"]:hover {
   resize: none;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 .name {
   margin-top: 44px;
 }
@@ -1571,4 +1561,15 @@ input[type="search"]:hover {
 
 .big-map-form-show {
   display: block;
+}
+
+.visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
