@@ -93,6 +93,11 @@ body {
   text-transform: uppercase;
 }
 
+/*.search-field::-webkit-search-cancel-button {
+  display: none;
+ }*/
+
+
 .search-field {
   padding-top: 12px;
   padding-right: 0;
@@ -132,13 +137,9 @@ input[type="search"]:hover {
   background-color: #ffffff;
 }
 
-/*.search-field::-webkit-search-cancel-button {
-  display: none;
- }*/
-
- .top-links:active {
-   color: rgba(255, 255, 255, 0.5);
- }
+.top-links:active {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .bookmarks {
   position: relative;
@@ -216,6 +217,7 @@ input[type="search"]:hover {
   justify-content: space-between;
   width: 940px;
   margin: 0 auto;
+  background-color: #f4f7f9;
 }
 
 .store-text {
@@ -394,11 +396,11 @@ input[type="search"]:hover {
 
 .product-inner a, .discount-list a {
   display: block;
-  width: 136px;
+  width: 116px;
   margin: 0px;
   margin-bottom: 20px;
   margin-left: 24px;
-  padding: 12px 0;
+  padding: 12px 10px;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
@@ -523,8 +525,8 @@ input[type="search"]:hover {
   background-position: 0 0;
 }
 
-.wrapper > input {
-	display: none;
+.wrapper input {
+  display: none;
 }
 
 .wrapper {
@@ -646,10 +648,12 @@ input[type="search"]:hover {
 }
 
 .product-brands a {
-  width: 252px;
+  width: 232px;
   margin: 24px;
   padding-top: 14px;
+  padding-right: 10px;
   padding-bottom: 12px;
+  padding-left: 10px;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
@@ -703,14 +707,18 @@ input[type="search"]:hover {
 }
 
 .perforator {
-  display: block;
+  margin-top: 20px;
+  box-shadow: inset 0px 0px 0px 1px rgba(234,234,234,1);
+}
+
+.product-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 220px;
   min-height: 316px;
-  margin-top: 20px;
-  box-shadow: inset 0px 0px 0px 1px rgba(234,234,234,1);
+  text-decoration: none;
+  color: #000000;
 }
 
 .perforator-img {
@@ -721,15 +729,18 @@ input[type="search"]:hover {
   height: 170px;
 }
 
-.perforator:hover {
+.perforator:hover,
+.product-card:focus {
   box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
 }
 
-.perforator:hover .buttons {
+.perforator:hover .buttons,
+.product-card:focus .buttons {
   display: block;
 }
 
-.perforator:hover .perforator-img {
+.perforator:hover .perforator-img,
+.product-card:focus .perforator-img {
   display: none;
 }
 
@@ -802,7 +813,7 @@ input[type="search"]:hover {
   margin-right: 42px;
   margin-left: 42px;
   margin-bottom: 0px;
-  padding: 12px 0;
+  padding: 12px 10px;
   color: #ffffff;
   background-color: #63a63e;
   box-shadow: inset 0px -3px 0px 0px rgba(54,115,21,1);
@@ -841,7 +852,7 @@ input[type="search"]:hover {
   margin: 0 42px;
   margin-top: 8px;
   margin-bottom: 39px;
-  padding: 12px 0;
+  padding: 12px 10px;
   background-color: #ffffff;
   color: #32425c;
   box-shadow: inset 0px 0px 0px 3px rgba(99,166,62,1);
@@ -1013,10 +1024,10 @@ input[type="search"]:hover {
   flex-wrap: wrap;
   width: 240px;
   color: #ffffff;
-  overflow: hidden;
 }
 
 .advantages-list label:hover,
+.advantages-list label:focus,
 .advantages-list input[type=radio]:checked + label:hover {
   color: inherit;
   background-color: #293449;
@@ -1024,7 +1035,9 @@ input[type="search"]:hover {
 
 /*убирает значок радиокнопки*/
 .advantages-list input[type=radio] {
-  display: none;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
 
 .advantages-list label {
@@ -1124,13 +1137,13 @@ input[type="search"]:hover {
   line-height: 24px;
 }
 
-.true-man-text { /*текст должен быть шире!*/
+.true-man-text {
   margin: 0;
   margin-top: 24px;
   padding-right: 18px;
 }
 
-.paragraph-two { /*текст должен быть шире!*/
+.paragraph-two {
   margin-top: 24px;
   margin-bottom: 0px;
 }
@@ -1228,9 +1241,8 @@ input[type="search"]:hover {
   color: #ffffff;
 }
 
-.footer-inner { /*красиво, но неправильно*/
+.footer-inner {
   display: flex;
-  /*justify-content: space-between;*/
   width: 940px;
   margin: 0 auto;
 }
@@ -1238,7 +1250,6 @@ input[type="search"]:hover {
 .footer-text {
   display: flex;
   flex-direction: column;
-  /*justify-content: flex-start;*/
 }
 
 .footer-logo {
@@ -1411,7 +1422,7 @@ input[type="search"]:hover {
   text-decoration: none;
 }
 
-.feedback-form { /*height: 424px;*/
+.feedback-form {
   display: none;
   position: fixed;
   top: 50%;
